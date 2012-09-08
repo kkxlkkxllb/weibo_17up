@@ -19,6 +19,7 @@ And then execute:
 ## 使用
   
   配置文件: Rails.root + "/config/service.yml"
+
     weibo:
     	production:
       	app_key: 'XXXXX446XXX'
