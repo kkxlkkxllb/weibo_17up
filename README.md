@@ -6,7 +6,7 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'weibo', :git => "git://github.com/lg2046/weibo.git"
+    gem 'weibo2', :git => "git://github.com/kkxlkkxllb/weibo2.git"
 
 And then execute:
 
@@ -18,12 +18,12 @@ And then execute:
     
 ## 使用
   
-  配置文件: Rails.root + "/config/weibo.yml"
-    
-    production:
-      app_key: 'XXXXX446XXX'
-      app_secret: 'XXXXXX784a52b45XXXXXXXXXXXXXX'
-      redirect_uri: 'http://www.url.com/callback'
+  配置文件: Rails.root + "/config/service.yml"
+    weibo:
+    	production:
+      	app_key: 'XXXXX446XXX'
+      	app_secret: 'XXXXXX784a52b45XXXXXXXXXXXXXX'
+      	redirect_uri: 'http://www.url.com/callback'
   
  授权:
  
