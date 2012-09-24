@@ -74,7 +74,14 @@ module Weibo
       self.oauth.post("friendships/create", :uid  => uid)
     end
 
-    
+		def friendships_friends_uids(options = {})
+			default_params = { :cursor => 0, :count => 200, :uid => @weibo_uid }
+			self.oauth.get "friendships/friends/ids", default_params.merge(options)
+		end
+
+    def friendships_destroy(uid)
+    	self.oauth.post("friendships/destroy", :uid  => uid)
+    end
 
 
     #################  用户接口
