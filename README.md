@@ -6,7 +6,7 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'weibo2', :git => "git://github.com/kkxlkkxllb/weibo2.git"
+    gem 'weibo_17up'
 
 And then execute:
 
