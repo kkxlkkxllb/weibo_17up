@@ -91,6 +91,15 @@ module Weibo
       self.oauth.get "users/show", default_params.merge(options)
     end
 
+    ################# 评论接口
+    def comments_by_me(options = {})
+      self.oauth.get "comments/by_me", options
+    end
+
+    ################# 收藏
+    def favorites(options = {})
+      self.oauth.get "favorites", options
+    end
 
     #################  标签
 
